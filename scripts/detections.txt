@@ -70,7 +70,6 @@
   'desk' detected (score=0.91)
   'mirror' detected (score=0.96)
   'bath towel' detected (score=0.59)
-  'bathroom sink' detected (score=0.67)
 
 [1836989614_af65e694c9_b.jpg]
   'pillow' detected (score=0.93)
@@ -381,7 +380,6 @@
   'floor' detected (score=0.85)
   'carpet' detected (score=0.50)
   'mirror' detected (score=0.87)
-  'bathroom sink' detected (score=0.58)
 
 [6115069039_17e7fbca91_b.jpg]
   'pillow' detected (score=0.82)
