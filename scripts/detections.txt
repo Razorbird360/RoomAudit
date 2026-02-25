@@ -1,0 +1,1388 @@
+[10717536075_b9cd08939e_b.jpg]
+  'pillow' detected (score=0.92)
+  'bed sheet' detected (score=0.76)
+  'desk' detected (score=0.91)
+  'mirror' detected (score=0.77)
+  'window' detected (score=0.83)
+
+[1170992646_bb4f445d0a_b.jpg]
+  'pillow' detected (score=0.97)
+  'bed sheet' detected (score=0.69)
+  'blanket' detected (score=0.51)
+  'carpet' detected (score=0.73)
+  'window' detected (score=0.76)
+
+[12152938154_b287f0e258_b.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.73)
+  'floor' detected (score=0.96)
+  'mirror' detected (score=0.97)
+  'sofa' detected (score=0.81)
+
+[1386046071_b67717c1c3_b.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.66)
+  'blanket' detected (score=0.69)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.81)
+  'mirror' detected (score=0.87)
+
+[1386634649_229eceef82_b.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.65)
+  'blanket' detected (score=0.73)
+  'floor' detected (score=0.87)
+  'window' detected (score=0.78)
+
+[14143211377_6ee1708c52_b.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.51)
+  'floor' detected (score=0.57)
+  'carpet' detected (score=0.51)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.90)
+  'sofa' detected (score=0.72)
+  'window' detected (score=0.56)
+
+[14330643254_f7c273927a_b.jpg]
+  'pillow' detected (score=0.92)
+  'bed sheet' detected (score=0.79)
+  'blanket' detected (score=0.68)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.63)
+  'mirror' detected (score=0.87)
+
+[15109875464_6066805855_c.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.78)
+  'carpet' detected (score=0.58)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.90)
+
+[15245499424_61020e378d_b.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.76)
+  'carpet' detected (score=0.51)
+
+[16305320913_1aef535e8f_b.jpg]
+  'floor' detected (score=0.73)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.91)
+  'mirror' detected (score=0.96)
+  'bath towel' detected (score=0.59)
+  'bathroom sink' detected (score=0.67)
+
+[1836989614_af65e694c9_b.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.85)
+  'carpet' detected (score=0.59)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.89)
+
+[211709199_be2ccd8bf3_b.jpg]
+  'pillow' detected (score=0.85)
+  'bed sheet' detected (score=0.62)
+  'carpet' detected (score=0.75)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.93)
+  'window' detected (score=0.86)
+
+[2224260632_5b08bc48a4_b.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.71)
+  'carpet' detected (score=0.58)
+  'chair' detected (score=0.88)
+
+[2403433229_44bea5d28d_b.jpg]
+  'pillow' detected (score=0.65)
+  'bed sheet' detected (score=0.52)
+  'carpet' detected (score=0.78)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.91)
+  'mirror' detected (score=0.95)
+  'window' detected (score=0.85)
+
+[2412202273_09eb90f406_b.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.76)
+  'floor' detected (score=0.97)
+  'desk' detected (score=0.77)
+  'sofa' detected (score=0.92)
+
+[2442232991_9c2322af85_o.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.60)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.88)
+  'window' detected (score=0.79)
+
+[2444514929_47bc130780_o.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.59)
+  'carpet' detected (score=0.59)
+  'desk' detected (score=0.72)
+  'mirror' detected (score=0.95)
+
+[24450960429_ce34b59028_b.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.81)
+  'blanket' detected (score=0.57)
+  'carpet' detected (score=0.54)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.80)
+  'mirror' detected (score=0.64)
+
+[2496998962_4603cb9b51_o.jpg]
+  'pillow' detected (score=0.97)
+  'bed sheet' detected (score=0.79)
+  'floor' detected (score=0.86)
+
+[26871850050_93dd4e0d4f_b.jpg]
+  'pillow' detected (score=0.90)
+  'bed sheet' detected (score=0.57)
+  'floor' detected (score=0.96)
+  'window' detected (score=0.83)
+
+[2704822609_6721f502d1_b.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.78)
+  'blanket' detected (score=0.54)
+  'carpet' detected (score=0.75)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.93)
+  'rubbish bin' detected (score=0.52)
+  'window' detected (score=0.91)
+
+[2727068527_eb80d8418b_c.jpg]
+  'pillow' detected (score=0.90)
+  'bed sheet' detected (score=0.56)
+  'carpet' detected (score=0.78)
+  'chair' detected (score=0.82)
+  'sofa' detected (score=0.93)
+  'window' detected (score=0.67)
+
+[2752915038_5d4c4416b2_o.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.63)
+  'carpet' detected (score=0.56)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.90)
+
+[27825806981_a9749a9d10_o.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.68)
+  'floor' detected (score=0.79)
+  'carpet' detected (score=0.71)
+  'window' detected (score=0.73)
+
+[2916284487_ebee9d2e47_b.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.67)
+  'blanket' detected (score=0.87)
+  'bath towel' detected (score=0.62)
+  'rubbish bin' detected (score=0.86)
+
+[29375469326_5f6fa7ff5b_o.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.63)
+  'floor' detected (score=0.77)
+  'chair' detected (score=0.69)
+  'desk' detected (score=0.69)
+  'window' detected (score=0.61)
+
+[30306738910_95c7f3f877_b.jpg]
+  'pillow' detected (score=0.91)
+  'bed sheet' detected (score=0.51)
+  'blanket' detected (score=0.54)
+  'carpet' detected (score=0.77)
+  'chair' detected (score=0.89)
+  'desk' detected (score=0.76)
+  'window' detected (score=0.71)
+
+[3154393583_785da355cf_b.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.72)
+  'blanket' detected (score=0.66)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.85)
+  'window' detected (score=0.65)
+
+[3158559315_62e78d5681_b.jpg]
+  'pillow' detected (score=0.88)
+  'floor' detected (score=0.86)
+  'carpet' detected (score=0.89)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.93)
+  'mirror' detected (score=0.90)
+  'sofa' detected (score=0.84)
+
+[3318779306_a47a031213_b.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.84)
+  'carpet' detected (score=0.78)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.88)
+  'window' detected (score=0.83)
+
+[3486222191_7a919ae789_o.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.92)
+  'carpet' detected (score=0.70)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.73)
+  'rubbish bin' detected (score=0.95)
+
+[3528676259_84ef7ea5d9_b.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.81)
+  'blanket' detected (score=0.80)
+  'carpet' detected (score=0.83)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.76)
+  'mirror' detected (score=0.93)
+
+[3580230413_701a66a1f8_o.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.62)
+  'floor' detected (score=0.68)
+  'carpet' detected (score=0.53)
+  'window' detected (score=0.88)
+
+[3962436891_3113f425f2_o.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.74)
+  'mirror' detected (score=0.71)
+
+[4137833707_94d95c99ca_z.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.65)
+  'carpet' detected (score=0.69)
+  'chair' detected (score=0.69)
+  'window' detected (score=0.90)
+
+[4227070482_7159c66007_b.jpg]
+  'pillow' detected (score=0.92)
+  'bed sheet' detected (score=0.84)
+  'carpet' detected (score=0.51)
+  'chair' detected (score=0.89)
+  'desk' detected (score=0.87)
+  'sofa' detected (score=0.83)
+
+[4513672689_6bd8508ea4_b.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.74)
+  'carpet' detected (score=0.62)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.86)
+  'window' detected (score=0.93)
+
+[4620557067_9abdc6da14_b.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.73)
+  'chair' detected (score=0.97)
+  'desk' detected (score=0.66)
+  'window' detected (score=0.71)
+
+[5074163129_6b9564ffbd_b.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.67)
+  'blanket' detected (score=0.82)
+  'carpet' detected (score=0.63)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.93)
+
+[5074760672_e08753cc56_b.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.72)
+  'blanket' detected (score=0.70)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.91)
+  'sofa' detected (score=0.51)
+  'window' detected (score=0.73)
+
+[5198639416_2a26dd4421_b.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.83)
+  'carpet' detected (score=0.86)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.88)
+
+[530576388_b77499518a_o.jpg]
+  'pillow' detected (score=0.92)
+  'bed sheet' detected (score=0.66)
+  'carpet' detected (score=0.62)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.87)
+  'window' detected (score=0.90)
+
+[5495436754_36c84d4ae5_b.jpg]
+  'pillow' detected (score=0.64)
+  'bed sheet' detected (score=0.69)
+  'carpet' detected (score=0.75)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.83)
+  'window' detected (score=0.79)
+
+[5495436842_993d26fdb5_b.jpg]
+  'pillow' detected (score=0.65)
+  'bed sheet' detected (score=0.52)
+  'carpet' detected (score=0.78)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.91)
+  'mirror' detected (score=0.95)
+  'window' detected (score=0.85)
+
+[5596702144_9103db66eb_b.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.78)
+  'blanket' detected (score=0.87)
+  'window' detected (score=0.59)
+
+[5689757_61405839be_o.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.59)
+  'carpet' detected (score=0.75)
+  'desk' detected (score=0.51)
+
+[5818572185_c328397707_c.jpg]
+  'pillow' detected (score=0.91)
+  'bed sheet' detected (score=0.69)
+  'blanket' detected (score=0.58)
+
+[5842972447_8252bfc78d_b.jpg]
+  'pillow' detected (score=0.80)
+  'bed sheet' detected (score=0.86)
+  'blanket' detected (score=0.71)
+  'carpet' detected (score=0.67)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.81)
+
+[5842990295_eefc6d350a_b.jpg]
+  'pillow' detected (score=0.89)
+  'bed sheet' detected (score=0.70)
+  'blanket' detected (score=0.71)
+
+[5843533306_c09fd59ffc_b.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.73)
+  'blanket' detected (score=0.84)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.96)
+  'mirror' detected (score=0.91)
+  'window' detected (score=0.58)
+
+[5955584139_720bd067c2_o.jpg]
+  'floor' detected (score=0.84)
+  'window' detected (score=0.83)
+
+[6114801672_6142b391be_o.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.80)
+  'floor' detected (score=0.85)
+  'carpet' detected (score=0.50)
+  'mirror' detected (score=0.87)
+  'bathroom sink' detected (score=0.58)
+
+[6115069039_17e7fbca91_b.jpg]
+  'pillow' detected (score=0.82)
+  'carpet' detected (score=0.62)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.88)
+  'mirror' detected (score=0.94)
+  'window' detected (score=0.67)
+
+[6145643520_44fc22a547_b.jpg]
+  'pillow' detected (score=0.91)
+  'bed sheet' detected (score=0.74)
+  'carpet' detected (score=0.85)
+  'desk' detected (score=0.55)
+  'mirror' detected (score=0.93)
+
+[6165011083_08e47df285_o.jpg]
+  'pillow' detected (score=0.91)
+  'bed sheet' detected (score=0.72)
+  'floor' detected (score=0.81)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.94)
+  'window' detected (score=0.89)
+
+[6225700714_cb8b48c8f3_b.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.78)
+  'blanket' detected (score=0.59)
+  'carpet' detected (score=0.66)
+  'chair' detected (score=0.83)
+  'desk' detected (score=0.67)
+
+[6279497375_e4f5b2d6d5_b.jpg]
+  'pillow' detected (score=0.91)
+  'bed sheet' detected (score=0.73)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.97)
+  'window' detected (score=0.70)
+
+[6311077323_0da6c34956_o.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.60)
+  'blanket' detected (score=0.51)
+  'carpet' detected (score=0.70)
+  'chair' detected (score=0.91)
+  'desk' detected (score=0.60)
+
+[6545272739_bbf6b800ee_o.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.86)
+  'chair' detected (score=0.92)
+
+[6719245707_d753ca30de_c.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.68)
+  'carpet' detected (score=0.76)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.67)
+  'window' detected (score=0.71)
+
+[6949776995_a342ae8db6_o.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.83)
+  'carpet' detected (score=0.57)
+
+[7814756306_a379cc4680_o.jpg]
+  'pillow' detected (score=0.77)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.67)
+  'window' detected (score=0.81)
+
+[7940128082_b6b0bb1c81_o.jpg]
+  'pillow' detected (score=0.96)
+  'blanket' detected (score=0.82)
+  'carpet' detected (score=0.79)
+  'chair' detected (score=0.92)
+  'sofa' detected (score=0.95)
+  'window' detected (score=0.86)
+
+[7983268388_2a50e4317b_o.jpg]
+  'pillow' detected (score=0.92)
+  'bed sheet' detected (score=0.56)
+  'floor' detected (score=0.83)
+
+[8006141516_914e491b24_b.jpg]
+  'pillow' detected (score=0.91)
+  'bed sheet' detected (score=0.78)
+  'carpet' detected (score=0.69)
+  'chair' detected (score=0.97)
+  'desk' detected (score=0.86)
+  'sofa' detected (score=0.76)
+  'window' detected (score=0.77)
+
+[8006144806_cdfef666eb_b.jpg]
+  'pillow' detected (score=0.92)
+  'bed sheet' detected (score=0.81)
+  'blanket' detected (score=0.56)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.79)
+  'window' detected (score=0.85)
+
+[8093627971_f284bc7a40_b.jpg]
+  'pillow' detected (score=0.91)
+  'bed sheet' detected (score=0.64)
+  'carpet' detected (score=0.62)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.73)
+
+[8636710939_c17e18a309_b.jpg]
+  'pillow' detected (score=0.92)
+  'bed sheet' detected (score=0.59)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.90)
+  'mirror' detected (score=0.73)
+  'rubbish bin' detected (score=0.70)
+  'window' detected (score=0.63)
+
+[8843042589_4fbb0b9a92_o.jpg]
+  'pillow' detected (score=0.89)
+  'floor' detected (score=0.90)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.94)
+  'mirror' detected (score=0.90)
+  'window' detected (score=0.92)
+
+[8967889558_8a2dd75421_c.jpg]
+  'pillow' detected (score=0.91)
+  'carpet' detected (score=0.87)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.90)
+  'sofa' detected (score=0.93)
+  'window' detected (score=0.81)
+
+[9551092509_f560c7ef56_c.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.77)
+  'carpet' detected (score=0.77)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.81)
+  'sofa' detected (score=0.92)
+  'window' detected (score=0.72)
+
+[a3f8b2d914_c7e1f05a_b.jpg]
+  'pillow' detected (score=0.95)
+  'bed sheet' detected (score=0.60)
+  'blanket' detected (score=0.72)
+  'chair' detected (score=0.83)
+  'desk' detected (score=0.93)
+
+[b9e4c1d827_f3a2e06b_b.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.84)
+  'sofa' detected (score=0.91)
+
+[kirsten-miles-NhNccu6YZAE-unsplash.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.74)
+  'blanket' detected (score=0.60)
+  'floor' detected (score=0.94)
+  'carpet' detected (score=0.85)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.97)
+  'window' detected (score=0.83)
+
+[pexels-ahmetcotur-20200290.jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.97)
+  'carpet' detected (score=0.65)
+
+[pexels-ahmetcotur-20200292.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.97)
+  'carpet' detected (score=0.79)
+  'chair' detected (score=0.56)
+
+[pexels-ahmetcotur-26859049.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.97)
+  'desk' detected (score=0.51)
+  'mirror' detected (score=0.83)
+
+[pexels-ahmetcotur-29702286.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.89)
+  'chair' detected (score=0.80)
+  'desk' detected (score=0.63)
+  'mirror' detected (score=0.88)
+  'window' detected (score=0.84)
+
+[pexels-ainun-dita-kartika-2156418516-34956629.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.91)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.76)
+  'window' detected (score=0.83)
+
+[pexels-aj-ahamad-767001191-33636637.jpg]
+  'pillow' detected (score=0.91)
+  'floor' detected (score=0.91)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.82)
+  'window' detected (score=0.62)
+
+[pexels-aj-ahamad-767001191-33636641.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.96)
+  'carpet' detected (score=0.69)
+  'chair' detected (score=0.75)
+
+[pexels-alan-antony-279974862-18470966 (1).jpg]
+  'pillow' detected (score=0.92)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.71)
+  'mirror' detected (score=0.92)
+
+[pexels-alan-antony-279974862-18470966.jpg]
+  'pillow' detected (score=0.92)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.71)
+  'mirror' detected (score=0.92)
+
+[pexels-alex-tyson-919593032-19966760.jpg]
+  'pillow' detected (score=0.96)
+  'blanket' detected (score=0.61)
+  'floor' detected (score=0.92)
+  'carpet' detected (score=0.63)
+  'mirror' detected (score=0.85)
+
+[pexels-amelia-hallsworth-5461600.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.96)
+  'desk' detected (score=0.57)
+  'sofa' detected (score=0.82)
+
+[pexels-andreaedavis-10171454.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.94)
+  'mirror' detected (score=0.97)
+
+[pexels-angelo-james-corsega-709220808-28247932.jpg]
+  'pillow' detected (score=0.92)
+  'floor' detected (score=0.96)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.69)
+
+[pexels-aniruth-salla-214988328-11857305.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.89)
+  'carpet' detected (score=0.72)
+  'window' detected (score=0.57)
+
+[pexels-ansar-muhammad-380085065-23916832.jpg]
+  'pillow' detected (score=0.89)
+  'floor' detected (score=0.91)
+  'carpet' detected (score=0.81)
+
+[pexels-ansar-muhammad-380085065-27604112.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.58)
+  'chair' detected (score=0.91)
+  'mirror' detected (score=0.81)
+  'window' detected (score=0.92)
+
+[pexels-artbovich-5998127.jpg]
+  'pillow' detected (score=0.92)
+  'floor' detected (score=0.94)
+  'chair' detected (score=0.93)
+  'window' detected (score=0.70)
+
+[pexels-artbovich-6186815.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.96)
+  'window' detected (score=0.63)
+
+[pexels-artbovich-6198666.jpg]
+  'pillow' detected (score=0.87)
+  'bed sheet' detected (score=0.69)
+  'floor' detected (score=0.95)
+  'carpet' detected (score=0.76)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.90)
+  'window' detected (score=0.75)
+
+[pexels-artbovich-6284232.jpg]
+  'pillow' detected (score=0.51)
+  'floor' detected (score=0.96)
+
+[pexels-artbovich-6394550.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.65)
+  'carpet' detected (score=0.83)
+  'desk' detected (score=0.52)
+  'mirror' detected (score=0.56)
+
+[pexels-artbovich-6527066.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.78)
+  'chair' detected (score=0.93)
+
+[pexels-artbovich-6580214.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.96)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.83)
+  'mirror' detected (score=0.94)
+
+[pexels-artbovich-6580216.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.89)
+  'carpet' detected (score=0.85)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.75)
+
+[pexels-artbovich-6580226.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.94)
+  'carpet' detected (score=0.90)
+
+[pexels-artbovich-6585597.jpg]
+  'floor' detected (score=0.96)
+
+[pexels-artbovich-6585602.jpg]
+  'floor' detected (score=0.94)
+  'desk' detected (score=0.56)
+  'window' detected (score=0.54)
+
+[pexels-artbovich-6920603.jpg]
+  'pillow' detected (score=0.96)
+  'blanket' detected (score=0.79)
+  'floor' detected (score=0.92)
+  'window' detected (score=0.53)
+
+[pexels-artbovich-7031731.jpg]
+  'floor' detected (score=0.97)
+
+[pexels-artbovich-7061665.jpg]
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.66)
+
+[pexels-artbovich-7061671.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.94)
+  'carpet' detected (score=0.88)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.87)
+
+[pexels-artbovich-7061673.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.93)
+  'carpet' detected (score=0.92)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.76)
+  'window' detected (score=0.67)
+
+[pexels-artbovich-7166944.jpg]
+  'floor' detected (score=0.95)
+  'chair' detected (score=0.86)
+  'desk' detected (score=0.65)
+
+[pexels-artbovich-7214167.jpg]
+  'floor' detected (score=0.80)
+  'carpet' detected (score=0.85)
+  'chair' detected (score=0.91)
+  'desk' detected (score=0.77)
+  'mirror' detected (score=0.65)
+
+[pexels-artbovich-7214466.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.95)
+
+[pexels-artbovich-7534232.jpg]
+  'floor' detected (score=0.94)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.92)
+  'window' detected (score=0.65)
+
+[pexels-artbovich-7546281.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.95)
+
+[pexels-artbovich-7546285.jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.91)
+  'mirror' detected (score=0.68)
+
+[pexels-artbovich-7745980.jpg]
+  'pillow' detected (score=0.96)
+  'blanket' detected (score=0.64)
+  'floor' detected (score=0.92)
+  'mirror' detected (score=0.69)
+
+[pexels-artbovich-7745986.jpg]
+  'pillow' detected (score=0.96)
+  'blanket' detected (score=0.51)
+  'floor' detected (score=0.92)
+  'chair' detected (score=0.73)
+
+[pexels-artbovich-8082235.jpg]
+  'pillow' detected (score=0.72)
+  'floor' detected (score=0.95)
+  'chair' detected (score=0.94)
+  'mirror' detected (score=0.84)
+  'window' detected (score=0.63)
+
+[pexels-artbovich-8082564.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.92)
+  'chair' detected (score=0.93)
+
+[pexels-artbovich-8089070.jpg]
+  'floor' detected (score=0.96)
+  'desk' detected (score=0.74)
+  'window' detected (score=0.72)
+
+[pexels-artbovich-8089074 (1).jpg]
+  'floor' detected (score=0.96)
+  'desk' detected (score=0.73)
+  'mirror' detected (score=0.86)
+
+[pexels-artbovich-8089074.jpg]
+  'floor' detected (score=0.96)
+  'desk' detected (score=0.73)
+  'mirror' detected (score=0.86)
+
+[pexels-artbovich-8134775.jpg]
+  'floor' detected (score=0.95)
+  'chair' detected (score=0.94)
+
+[pexels-artbovich-8135527.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.96)
+
+[pexels-bertellifotografia-13871310.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.79)
+
+[pexels-captain-10973940.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.76)
+  'chair' detected (score=0.89)
+  'desk' detected (score=0.65)
+  'rubbish bin' detected (score=0.78)
+
+[pexels-captain-11038193.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.94)
+  'sofa' detected (score=0.69)
+
+[pexels-dada-_design-240566386-12289355.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.92)
+  'mirror' detected (score=0.95)
+
+[pexels-danny-photography-237905745-33105840 (1).jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.92)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.86)
+
+[pexels-danny-photography-237905745-33105840.jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.92)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.86)
+
+[pexels-dauphotographer-31728406.jpg]
+  'pillow' detected (score=0.95)
+
+[pexels-deno-wang-205948777-11671086.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.96)
+  'window' detected (score=0.83)
+
+[pexels-didi-lecatompessy-2149441489-33125906.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.63)
+  'carpet' detected (score=0.67)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.91)
+  'rubbish bin' detected (score=0.93)
+
+[pexels-dwanghong-17495859.jpg]
+  'floor' detected (score=0.92)
+
+[pexels-dwi2793-34961616.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.91)
+  'carpet' detected (score=0.80)
+  'mirror' detected (score=0.61)
+
+[pexels-eliezer-36162678.jpg]
+  'pillow' detected (score=0.94)
+  'bed sheet' detected (score=0.63)
+  'floor' detected (score=0.66)
+  'carpet' detected (score=0.58)
+  'window' detected (score=0.88)
+
+[pexels-enginakyurt-3688261.jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.95)
+  'chair' detected (score=0.96)
+  'mirror' detected (score=0.69)
+
+[pexels-enginakyurt-4177810.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.74)
+
+[pexels-enginakyurt-4455836.jpg]
+  'pillow' detected (score=0.97)
+  'bed sheet' detected (score=0.74)
+  'floor' detected (score=0.76)
+
+[pexels-fotoaibe-1571470.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.93)
+  'carpet' detected (score=0.82)
+  'chair' detected (score=0.86)
+  'desk' detected (score=0.63)
+  'sofa' detected (score=0.89)
+
+[pexels-fotoaibe-1669799.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.91)
+  'carpet' detected (score=0.86)
+  'chair' detected (score=0.86)
+  'sofa' detected (score=0.89)
+  'window' detected (score=0.65)
+
+[pexels-fotoaibe-1743227.jpg]
+  'floor' detected (score=0.96)
+  'carpet' detected (score=0.93)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.69)
+  'sofa' detected (score=0.95)
+
+[pexels-fotoaibe-1743229.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.95)
+  'carpet' detected (score=0.81)
+  'window' detected (score=0.88)
+
+[pexels-framedbydavinci-5002329.jpg]
+  'pillow' detected (score=0.91)
+  'blanket' detected (score=0.70)
+  'floor' detected (score=0.97)
+  'mirror' detected (score=0.81)
+  'window' detected (score=0.85)
+
+[pexels-frdsmu-32829704 (1).jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.79)
+  'chair' detected (score=0.89)
+
+[pexels-frdsmu-32829704.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.79)
+  'chair' detected (score=0.89)
+
+[pexels-gatranro-9877452.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.95)
+  'sofa' detected (score=0.90)
+
+[pexels-gaurav-sood-1109267-4427020.jpg]
+  'pillow' detected (score=0.93)
+  'blanket' detected (score=0.60)
+  'floor' detected (score=0.90)
+  'chair' detected (score=0.96)
+  'desk' detected (score=0.87)
+  'window' detected (score=0.89)
+
+[pexels-haider-syed-719913841-18651505.jpg]
+  'floor' detected (score=0.91)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.85)
+  'mirror' detected (score=0.91)
+
+[pexels-hakimsatoso-3634741.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.88)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.53)
+  'mirror' detected (score=0.83)
+
+[pexels-helloaesthe-15692774.jpg]
+  'pillow' detected (score=0.95)
+  'mirror' detected (score=0.74)
+  'window' detected (score=0.53)
+
+[pexels-hiroom-17227604.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.97)
+  'mirror' detected (score=0.88)
+
+[pexels-hoang-nguy-n-669214752-27543245.jpg]
+  'pillow' detected (score=0.97)
+  'bed sheet' detected (score=0.53)
+
+[pexels-hotanphat28-14532308.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.92)
+  'carpet' detected (score=0.82)
+  'chair' detected (score=0.82)
+
+[pexels-hotanphat28-14532311.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.95)
+  'carpet' detected (score=0.75)
+  'chair' detected (score=0.92)
+
+[pexels-iamluisao-12652920.jpg]
+  'pillow' detected (score=0.58)
+  'floor' detected (score=0.87)
+  'chair' detected (score=0.95)
+
+[pexels-jvdm-1454806.jpg]
+  'pillow' detected (score=0.92)
+  'floor' detected (score=0.91)
+  'carpet' detected (score=0.76)
+
+[pexels-jvdm-1457845.jpg]
+  'pillow' detected (score=0.87)
+  'bed sheet' detected (score=0.55)
+  'blanket' detected (score=0.70)
+  'floor' detected (score=0.92)
+  'window' detected (score=0.95)
+
+[pexels-keeganjchecks-28148281.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.95)
+  'carpet' detected (score=0.56)
+  'chair' detected (score=0.90)
+  'sofa' detected (score=0.88)
+
+[pexels-kevin-yung-2152346613-34790702.jpg]
+  'pillow' detected (score=0.90)
+  'floor' detected (score=0.97)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.85)
+  'window' detected (score=0.80)
+
+[pexels-l-ng-studio-3030613-16648046.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.93)
+  'mirror' detected (score=0.95)
+
+[pexels-level23media-3016428.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.92)
+  'carpet' detected (score=0.83)
+  'chair' detected (score=0.96)
+  'sofa' detected (score=0.93)
+  'window' detected (score=0.95)
+
+[pexels-liz-henderson-1585908276-30898458.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.88)
+  'carpet' detected (score=0.51)
+  'chair' detected (score=0.95)
+  'desk' detected (score=0.58)
+  'rubbish bin' detected (score=0.86)
+
+[pexels-liz-henderson-1585908276-34628299.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.96)
+  'chair' detected (score=0.83)
+  'window' detected (score=0.85)
+
+[pexels-louie-alma-2154387078-33197282.jpg]
+  'pillow' detected (score=0.96)
+
+[pexels-louie-alma-2154387078-33197283.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.94)
+
+[pexels-louie-alma-2154387078-33197293.jpg]
+  'pillow' detected (score=0.91)
+  'floor' detected (score=0.90)
+  'window' detected (score=0.90)
+
+[pexels-lucaluperto-19045885.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.71)
+
+[pexels-luis-zambrano-3782493-16436911.jpg]
+  'pillow' detected (score=0.93)
+  'window' detected (score=0.73)
+
+[pexels-luis-zambrano-3782493-16436919.jpg]
+  'pillow' detected (score=0.95)
+
+[pexels-magda-ehlers-pexels-15271518.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.78)
+
+[pexels-markus-winkler-1430818-31567419.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.72)
+
+[pexels-markus-winkler-1430818-31609726.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.68)
+  'window' detected (score=0.93)
+
+[pexels-mographe-34672503.jpg]
+  'pillow' detected (score=0.90)
+  'floor' detected (score=0.97)
+  'chair' detected (score=0.68)
+  'desk' detected (score=0.85)
+  'mirror' detected (score=0.84)
+  'window' detected (score=0.95)
+
+[pexels-mographe-34672512.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.87)
+  'desk' detected (score=0.76)
+  'mirror' detected (score=0.91)
+  'sofa' detected (score=0.74)
+  'window' detected (score=0.93)
+
+[pexels-naimbic-2029698.jpg]
+  'pillow' detected (score=0.93)
+  'window' detected (score=0.55)
+
+[pexels-naimbic-2029719.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.78)
+  'window' detected (score=0.68)
+
+[pexels-naimbic-2029722.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.81)
+
+[pexels-neron-photos-3171798-4887696.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.62)
+  'carpet' detected (score=0.85)
+  'window' detected (score=0.96)
+
+[pexels-peter-vang-2157328093-35419457.jpg]
+  'pillow' detected (score=0.95)
+  'blanket' detected (score=0.71)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.61)
+  'window' detected (score=0.95)
+
+[pexels-pixabay-210604.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.93)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.83)
+  'mirror' detected (score=0.94)
+
+[pexels-pixabay-237371.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.91)
+  'chair' detected (score=0.90)
+  'desk' detected (score=0.81)
+
+[pexels-pixabay-262048.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.90)
+  'carpet' detected (score=0.91)
+  'chair' detected (score=0.51)
+  'window' detected (score=0.76)
+
+[pexels-pixabay-271618.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.95)
+  'desk' detected (score=0.87)
+  'sofa' detected (score=0.62)
+  'window' detected (score=0.65)
+
+[pexels-pixabay-271619.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.85)
+  'desk' detected (score=0.77)
+  'sofa' detected (score=0.71)
+
+[pexels-pixabay-271624.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.95)
+  'desk' detected (score=0.79)
+  'mirror' detected (score=0.88)
+  'sofa' detected (score=0.86)
+  'window' detected (score=0.59)
+
+[pexels-pixabay-271643.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.77)
+  'chair' detected (score=0.84)
+
+[pexels-pixabay-276671.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.60)
+  'window' detected (score=0.83)
+
+[pexels-planka-25025606.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.96)
+
+[pexels-qaarif-9420758.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.88)
+  'carpet' detected (score=0.83)
+  'window' detected (score=0.80)
+
+[pexels-quang-nguyen-vinh-222549-14021929 (1).jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.93)
+  'sofa' detected (score=0.94)
+  'window' detected (score=0.82)
+
+[pexels-quang-nguyen-vinh-222549-14021929 (2).jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.93)
+  'sofa' detected (score=0.94)
+  'window' detected (score=0.82)
+
+[pexels-quang-nguyen-vinh-222549-14021929.jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.93)
+  'sofa' detected (score=0.94)
+  'window' detected (score=0.82)
+
+[pexels-quang-nguyen-vinh-222549-14021930.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.96)
+  'chair' detected (score=0.91)
+  'desk' detected (score=0.82)
+  'mirror' detected (score=0.94)
+  'sofa' detected (score=0.91)
+  'window' detected (score=0.88)
+
+[pexels-quang-nguyen-vinh-222549-14021931.jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.93)
+  'chair' detected (score=0.91)
+  'desk' detected (score=0.54)
+  'mirror' detected (score=0.94)
+  'sofa' detected (score=0.93)
+  'window' detected (score=0.86)
+
+[pexels-quang-nguyen-vinh-222549-14021932.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.95)
+  'chair' detected (score=0.93)
+  'sofa' detected (score=0.91)
+
+[pexels-quang-nguyen-vinh-222549-14022458.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.96)
+  'desk' detected (score=0.52)
+  'mirror' detected (score=0.96)
+
+[pexels-quang-nguyen-vinh-222549-14025023.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.91)
+  'chair' detected (score=0.51)
+
+[pexels-quang-nguyen-vinh-222549-14025033.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.85)
+  'carpet' detected (score=0.53)
+  'mirror' detected (score=0.95)
+  'sofa' detected (score=0.68)
+
+[pexels-quang-nguyen-vinh-222549-14025037.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.82)
+  'chair' detected (score=0.81)
+
+[pexels-quang-nguyen-vinh-222549-14917460.jpg]
+  'pillow' detected (score=0.90)
+  'floor' detected (score=0.93)
+  'carpet' detected (score=0.83)
+  'mirror' detected (score=0.91)
+  'sofa' detected (score=0.94)
+
+[pexels-quang-nguyen-vinh-222549-14917462.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.78)
+  'sofa' detected (score=0.89)
+
+[pexels-quang-nguyen-vinh-222549-29000006.jpg]
+  'pillow' detected (score=0.96)
+  'bed sheet' detected (score=0.54)
+  'floor' detected (score=0.93)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.72)
+  'mirror' detected (score=0.85)
+  'window' detected (score=0.54)
+
+[pexels-quang-nguyen-vinh-222549-29000012.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.58)
+  'chair' detected (score=0.95)
+  'window' detected (score=0.50)
+
+[pexels-quang-nguyen-vinh-222549-6876801.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.94)
+  'chair' detected (score=0.90)
+  'window' detected (score=0.85)
+
+[pexels-quang-nguyen-vinh-222549-6876834.jpg]
+  'pillow' detected (score=0.93)
+  'bed sheet' detected (score=0.55)
+
+[pexels-ricardo-cacho-124841572-15303762.jpg]
+  'floor' detected (score=0.96)
+  'window' detected (score=0.96)
+
+[pexels-scenehaus-33753444.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.97)
+
+[pexels-stephane-adou-mr_adou-225423229-15230252.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.97)
+  'carpet' detected (score=0.77)
+  'sofa' detected (score=0.83)
+  'window' detected (score=0.50)
+
+[pexels-suhel-vba-1749662-3659683.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.96)
+
+[pexels-svh-manali-1801124329-28347477.jpg]
+  'floor' detected (score=0.94)
+  'chair' detected (score=0.94)
+  'desk' detected (score=0.83)
+  'window' detected (score=0.74)
+
+[pexels-the-7-hotel-lisbon-1817831-18201945.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.92)
+  'mirror' detected (score=0.60)
+
+[pexels-thiha-soe-2746200-5883725.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.76)
+  'chair' detected (score=0.85)
+  'desk' detected (score=0.88)
+  'mirror' detected (score=0.91)
+  'window' detected (score=0.73)
+
+[pexels-travelling-tourist-1595597617-33400871 (1).jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.92)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.66)
+  'mirror' detected (score=0.81)
+  'sofa' detected (score=0.60)
+
+[pexels-travelling-tourist-1595597617-33400871.jpg]
+  'pillow' detected (score=0.97)
+  'floor' detected (score=0.92)
+  'chair' detected (score=0.92)
+  'desk' detected (score=0.66)
+  'mirror' detected (score=0.81)
+  'sofa' detected (score=0.60)
+
+[pexels-upgraded-points-121011768-14513797 (1).jpg]
+  'pillow' detected (score=0.92)
+  'floor' detected (score=0.86)
+  'carpet' detected (score=0.66)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.60)
+  'rubbish bin' detected (score=0.82)
+  'window' detected (score=0.58)
+
+[pexels-upgraded-points-121011768-14513797.jpg]
+  'pillow' detected (score=0.92)
+  'floor' detected (score=0.86)
+  'carpet' detected (score=0.66)
+  'chair' detected (score=0.93)
+  'desk' detected (score=0.60)
+  'rubbish bin' detected (score=0.82)
+  'window' detected (score=0.58)
+
+[pexels-vince-28962539.jpg]
+  'pillow' detected (score=0.96)
+  'floor' detected (score=0.87)
+  'window' detected (score=0.64)
+
+[pexels-wilcle-nunes-38713774-27164982.jpg]
+  'pillow' detected (score=0.94)
+  'floor' detected (score=0.93)
+  'carpet' detected (score=0.73)
+
+[pexels-william-pearson-382869415-14645130.jpg]
+  'pillow' detected (score=0.95)
+  'floor' detected (score=0.95)
+
+[pexels-zion-9494897.jpg]
+  'pillow' detected (score=0.93)
+  'floor' detected (score=0.87)
+  'carpet' detected (score=0.79)
+  'mirror' detected (score=0.81)
+
