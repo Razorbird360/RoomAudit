@@ -3,6 +3,7 @@
 
 import argparse
 import random
+import time
 from pathlib import Path
 from .detect import detect_all_images, save_detections, load_detections
 from .inpaint import (
@@ -18,6 +19,7 @@ MESSY_DIR = ROOT / "data" / "messy"
 
 
 def main():
+    start = time.time()
     parser = argparse.ArgumentParser(description="Generate defect variants of clean hotel room images.")
     parser.add_argument("--test", action="store_true", help="Process a random sample of 5 images.")
     args = parser.parse_args()
@@ -48,6 +50,15 @@ def main():
 
     all_detections = load_detections(MASKS_DIR, image_paths)
     run_inpaint(pipe, all_detections, image_paths, MESSY_DIR, num_variants, max_defects, flux_steps)
+
+    elapsed = int(time.time() - start)
+    h, rem = divmod(elapsed, 3600)
+    m, s = divmod(rem, 60)
+    parts = []
+    if h: parts.append(f"{h}h")
+    if m: parts.append(f"{m}min")
+    parts.append(f"{s}s")
+    print(f"Done in {' '.join(parts)}.")
 
 
 if __name__ == "__main__":

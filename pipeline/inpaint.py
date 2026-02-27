@@ -8,18 +8,19 @@ import torch
 from pathlib import Path
 from PIL import Image
 from tqdm import tqdm
-from diffusers import FluxFillPipeline
+from diffusers import FluxFillPipeline, FluxTransformer2DModel
+from torchao.quantization import quantize_, Int8WeightOnlyConfig
 from .prompts import DEFECT_PROMPTS
 
 FLUX_MODEL_ID   = "black-forest-labs/FLUX.1-Fill-dev"
-FLUX_STEPS      = 28
-FLUX_STEPS_TEST = 8 
+FLUX_STEPS      = 30
+FLUX_STEPS_TEST = 15
 FLUX_GUIDANCE   = 30.0
 
-NUM_VARIANTS      = 2
-MAX_DEFECTS       = 1
-TEST_NUM_VARIANTS = 1
-TEST_MAX_DEFECTS  = 1
+NUM_VARIANTS      = 3
+MAX_DEFECTS       = 3
+TEST_NUM_VARIANTS = 3
+TEST_MAX_DEFECTS  = 3
 
 ROOT      = Path(__file__).parent.parent
 CLEAN_DIR = ROOT / "data" / "clean"
@@ -27,9 +28,21 @@ MASKS_DIR = ROOT / "data" / "masks"
 MESSY_DIR = ROOT / "data" / "messy"
 
 
-# Load FLUX.1 Fill with cpu offload to stay within 16 GB VRAM
+# Load FLUX.1 Fill with int8 transformer to fit within 16 GB VRAM
 def load_flux_pipeline():
-    pipe = FluxFillPipeline.from_pretrained(FLUX_MODEL_ID, torch_dtype=torch.bfloat16)
+    # Load transformer in bfloat16 then quantize to int8 in-place
+    transformer = FluxTransformer2DModel.from_pretrained(
+        FLUX_MODEL_ID,
+        subfolder="transformer",
+        torch_dtype=torch.bfloat16,
+    )
+    quantize_(transformer, Int8WeightOnlyConfig(version=2))
+    pipe = FluxFillPipeline.from_pretrained(
+        FLUX_MODEL_ID,
+        transformer=transformer,
+        torch_dtype=torch.bfloat16,
+    )
+    # T5 text encoder is offloaded to CPU (only runs once per image, not per step)
     pipe.enable_model_cpu_offload()
     return pipe
 
@@ -120,7 +133,7 @@ if __name__ == "__main__":
         raise SystemExit(f"No .jpg images found in {CLEAN_DIR}")
 
     if args.test:
-        image_paths = random.sample(image_paths, min(5, len(image_paths)))
+        image_paths = random.sample(image_paths, min(3, len(image_paths)))
         print(f"--test mode: {len(image_paths)} images, {TEST_NUM_VARIANTS} variant(s), {TEST_MAX_DEFECTS} defect(s), {FLUX_STEPS_TEST} steps.")
 
     num_variants = TEST_NUM_VARIANTS if args.test else NUM_VARIANTS

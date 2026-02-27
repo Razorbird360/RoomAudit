@@ -1,6 +1,7 @@
 # Normalises data/clean/ in-place:
 #   - Resize any image where max(width, height) > 1920 → longest edge = 1920 px
 #     (aspect ratio preserved, LANCZOS resampling)
+#   - Snap both dimensions to nearest multiple of 16 (required by FLUX)
 #   - Convert any PNG → JPG (quality=95), delete the original .png
 #   - Print before/after stats (count, min/max/median longest edge)
 #   - Idempotent — re-running is a no-op
@@ -36,9 +37,16 @@ def main():
         img = Image.open(img_path).convert("RGB")
         w, h = img.size
 
+        # Scale down if too large, then snap both dims to multiple of 16
+        w_new, h_new = w, h
         if max(w, h) > MAX_EDGE:
             scale = MAX_EDGE / max(w, h)
-            img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+            w_new, h_new = int(w * scale), int(h * scale)
+        w_new = round(w_new / 16) * 16
+        h_new = round(h_new / 16) * 16
+
+        if (w_new, h_new) != (w, h):
+            img = img.resize((w_new, h_new), Image.LANCZOS)
             resized += 1
 
         out_path = img_path.with_suffix(".jpg")
