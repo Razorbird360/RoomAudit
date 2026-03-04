@@ -30,7 +30,7 @@ That gives me (clean image, messy image, defect labels) pairs without needing an
 
 ### Segmentation
 
-Went with **SAM3** (Meta, `facebook/sam3`, ~848M params, ~4GB VRAM bfloat16). It supports text-prompt-based segmentation which is exactly what I needed — I can just say "pillow" and get a mask back. Uses `build_sam3_image_model` + `Sam3Processor` from the sam3 package. Has to be installed directly from GitHub, not on PyPI.
+Went with **SAM3** (Meta, `facebook/sam3`, ~848M params, ~4GB VRAM bfloat16). It supports text-prompt-based segmentation which is exactly what I needed. Just say "pillow" and get a mask back. Uses `build_sam3_image_model` + `Sam3Processor` from the sam3 package. Has to be installed directly from GitHub, not on PyPI.
 
 ### Inpainting
 
@@ -46,7 +46,7 @@ To fit it on 16GB VRAM: load the transformer in bfloat16 then quantize it to int
 
 ### Runtime
 
-Did the math on running the full pipeline at full settings (28 steps, 5 variants, 3 stacked defects, 218 images) — came out to 75–175 hours. Not viable.
+Did the math on running the full pipeline at full settings (28 steps, 5 variants, 3 stacked defects, 218 images), came out to 75–175 hours. Not viable.
 
 Considered **cloud** (Vast.ai, priced it out at ~$6–8 on an A100). Decided to run locally instead to explore local optimisation first.
 
@@ -75,7 +75,7 @@ VRAM strategy: SAM3 and FLUX can't coexist in 16GB. SAM3 runs first, then gets d
 
 12 object categories: pillow, bed sheet, blanket, floor, carpet, chair, desk, mirror, sofa, bath towel, bin, window.
 
-~35 defect prompts across those. Went through several revision passes — removed things like geometry deformations, object removals, and anything where the defect would visually overflow outside the mask boundary. The prompts need to describe something that stays contained within the object region.
+~35 defect prompts across those. Went through several revision passes, removing things like geometry deformations, object removals, and anything where the defect would visually overflow outside the mask boundary. The prompts need to describe something that stays contained within the object region.
 
 ### Crash resume
 
@@ -99,30 +99,19 @@ During inpainting, the observed behaviour is:
 
 ## Data generation run 1
 
-218 images, 3 variants each, up to 3 stacked defects per variant, 30 steps, guidance 30.0. Took **42h 10min** running locally.
+218 images, 3 variants each, up to 3 stacked defects per variant, 30 steps, FLUX guidance_scale=30. Took **42h 10min** running locally.
 
 ### Known issues
 
-Some images came out fine but others are noticeably unrealistic, for example defects like blood stains render as large dramatic splats rather than subtle marks. The high guidance (30.0) pushes the model too hard toward the prompt and away from the source image texture. Lowered to 10.0 for future runs, but proceeding with current dataset for now to unblock fine-tuning.
+Some images came out fine but others are noticeably unrealistic, for example defects like blood stains render as large dramatic splats rather than subtle marks. The high FLUX guidance_scale (30.0) pushes the model too hard toward the prompt and away from the source image texture. Lowered to guidance_scale=10 for future runs, but proceeding with current dataset for now to unblock fine-tuning.
 
 ---
 
-## Training run 1
+## Training runs
 
-Qwen3-VL-4B, QLoRA r=32, lr=2e-4, 5 epochs, batch 2 × grad_accum 4. Dataset: 218 clean + 654 messy (3 variants per clean image) = 872 total, 85/15 train/eval split.
+Ran 4 rounds of QLoRA fine-tuning on the FLUX guidance_scale=30 dataset (Qwen3-VL-4B, r=32, balanced 1:1 clean/messy). Run 1 exposed a class imbalance bug (Recall=1.0, model always predicted messy). Runs 2–4 fixed that and converged to a precision ceiling of ~0.68–0.69, F1 ~0.77–0.79. The eval loss floor (~0.036) was identical across all three runs regardless of LR or epoch count. The guidance_scale=30 synthetic images aren't realistic enough to push further. Optimal config confirmed: lr=1e-4, 4 epochs, early stopping (patience=4).
 
-> Accuracy: 0.769
-> Precision: 0.769
-> Recall: 1.000
-> F1: 0.870
-
-Train loss 0.086 → 0.012, eval loss bottomed ~0.048 at step 250 then started rising.
-
-### Issue: class imbalance
-
-Recall = 1.0 means the model essentially never predicts clean — it's biased toward always predicting "messy" because the dataset was 3:1 messy:clean. Precision 0.769 is just the natural result of that ratio. The model didn't really learn to distinguish; it learned to say messy every time.
-
-Fix for run 2: include each clean image 3× in the dataset (no file copies, just repeat the rows) to get a 1:1 ratio. Also: lower LR to 1e-4 since the model overfit fast, add lora_dropout 0.05, increase weight_decay to 0.05, reduce to 3 epochs.
+→ [Full run details: FLUX guidance_scale=30](docs/runs_gs30.md)
 
 ---
 
@@ -130,7 +119,11 @@ Fix for run 2: include each clean image 3× in the dataset (no file copies, just
 
 - normalize: done
 - SAM3 detection: done, all 218 images masked
-- FLUX inpainting: done (run 1 complete, guidance 30.0)
+- FLUX inpainting run 1: done (FLUX guidance_scale=30)
 - Dataset formatting (VQA pairs): done
-- Training run 1: done — class imbalance issue identified
-- Training run 2: not started (balanced dataset + revised hyperparams)
+- Training run 1 (FLUX guidance_scale=30): done — class imbalance identified
+- Training run 2 (FLUX guidance_scale=30): done — genuine classification, precision weak (0.693)
+- Training run 3 (FLUX guidance_scale=30): done — no improvement, data ceiling confirmed
+- Training run 4 (FLUX guidance_scale=30): done — healthy training, ceiling confirmed (F1 0.772)
+- FLUX inpainting run 2: not started (FLUX guidance_scale=10, cleaner defects)
+- Training run 5+: not started
