@@ -1,44 +1,56 @@
 # roomaudit
 
-Fine-tuning of a vision model to detect hotel room cleanliness defects.
+Fine-tuning of a vision model to detect hotel room cleanliness defects, with a web interface for live inspection.
 
 **Pipeline:** clean room images → SAM3 segmentation → FLUX.1 Fill inpainting → messy images → fine-tune Qwen3-VL
-
----
-
-## How it works
-
-1. **Normalize** source images to JPG, max 1920px longest edge
-2. **Detect** objects in each image (pillows, bedsheets, floor, etc.) using SAM3
-3. **Inpaint** defects onto detected objects using FLUX.1 Fill (hair, stains, crumples, litter, etc.)
-4. **Fine-tune** Qwen3-VL-4B-Instruct on the generated defect images using Unsloth
 
 ---
 
 ## Project structure
 
 ```
+frontend/              — React + Vite web app
+  src/
+    components/        — HowItWorks, Inspect, StepCard, CurvedArrow, ResultCard
+    components/ui/     — shadcn/ui (tabs, card, badge, sonner)
+  public/pipeline/     — step images for "How It Works" tab
+backend/               — FastAPI inference server
+  main.py              — API: POST /inspect
+  model.py             — Qwen3-VL + LoRA loading (CUDA/MPS/CPU)
 datagen/
-  prompts.py   — OBJECT_PROMPTS and DEFECT_PROMPTS
-  detect.py    — SAM3 detection, saves masks to data/masks/
-  inpaint.py   — FLUX.1 Fill inpainting, saves results to data/messy/
-  run.py       — full data generation entry point
+  prompts.py           — OBJECT_PROMPTS and DEFECT_PROMPTS
+  detect.py            — SAM3 detection, saves masks to data/masks/
+  inpaint.py           — FLUX.1 Fill inpainting, saves results to data/messy/
+  run.py               — full data generation entry point
 training/
-  train.ipynb   — QLoRA fine-tuning notebook (dataset build, training, metrics plot)
+  train.ipynb          — QLoRA fine-tuning notebook (dataset build, training, metrics plot)
 scripts/
-  normalize_images.py   — one-off: resize + PNG→JPG in-place
-  generate_messy.py     — diagnostic: run SAM3 and log detection scores
+  normalize_images.py  — one-off: resize + PNG→JPG in-place
+  generate_messy.py    — diagnostic: run SAM3 and log detection scores
 data/
-  clean/    — source images (JPG, normalized)
-  masks/    — SAM3 output masks (.npz per image)
-  messy/    — generated defect images + manifest.json
+  clean/               — source images (JPG, normalized)
+  masks/               — SAM3 output masks (.npz per image)
+  messy/               — generated defect images + manifest.json
 outputs/
-  lora_adapter/   — saved LoRA adapter after training
+  lora_adapter/        — saved LoRA adapter after training
 ```
 
 ---
 
-## Setup
+## Quick start (web app)
+
+```bash
+npm install        # installs frontend deps + backend pip deps
+npm run dev        # starts both frontend (:5173) and backend (:8000)
+```
+
+Requires Python 3.11+ with a venv activated. On CUDA machines, install `backend/requirements-cuda.txt` instead for Unsloth support.
+
+The backend auto-detects your device — CUDA (4-bit via Unsloth), MPS (fp16), or CPU (fp32).
+
+---
+
+## Data generation setup
 
 These must be installed in order — PyTorch and Unsloth have to come before everything else.
 
@@ -69,7 +81,7 @@ huggingface-cli login
 
 ---
 
-## Running
+## Running the pipeline
 
 **Step 1 — normalize source images** (one-time):
 ```bash
@@ -98,3 +110,4 @@ Open `training/train.ipynb` and run cells top to bottom.
 | Segmentation | `facebook/sam3` |
 | Inpainting | `black-forest-labs/FLUX.1-Fill-dev` |
 | Fine-tuning target | `unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit` |
+| Inference (MPS/CPU) | `Qwen/Qwen3-VL-4B-Instruct` |

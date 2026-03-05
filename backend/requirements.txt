@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+Pillow
+torch
+torchvision
+transformers
+peft
+qwen_vl_utils

@@ -1,0 +1,10 @@
+{
+  "name": "roomaudit",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && uvicorn main:app --port 8000 --reload",
+    "dev": "npm run dev:backend & npm run dev:frontend"
+  }
+}

@@ -54,3 +54,6 @@ desktop.ini
 *.swo
 
 .claude
+
+frontend/node_modules/
+frontend/dist/
