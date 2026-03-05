@@ -109,9 +109,13 @@ Some images came out fine but others are noticeably unrealistic, for example def
 
 ## Training runs
 
-Ran 4 rounds of QLoRA fine-tuning on the FLUX guidance_scale=30 dataset (Qwen3-VL-4B, r=32, balanced 1:1 clean/messy). Run 1 exposed a class imbalance bug (Recall=1.0, model always predicted messy). Runs 2–4 fixed that and converged to a precision ceiling of ~0.68–0.69, F1 ~0.77–0.79. The eval loss floor (~0.036) was identical across all three runs regardless of LR or epoch count. The guidance_scale=30 synthetic images aren't realistic enough to push further. Optimal config confirmed: lr=1e-4, 4 epochs, early stopping (patience=4).
+Ran 4 rounds of QLoRA fine-tuning on the FLUX guidance_scale=30 dataset (Qwen3-VL-4B, r=32, balanced 1:1 clean/messy). Run 1 exposed a class imbalance bug (Recall=1.0, model always predicted messy). Runs 2–4 fixed that and converged to a precision ceiling of ~0.67–0.69, F1 ~0.77–0.79. The eval loss floor (~0.036) was identical across all three runs regardless of LR or epoch count. The guidance_scale=30 synthetic images aren't realistic enough to push further. Optimal config confirmed: lr=1e-4, 4 epochs, early stopping (patience=4).
 
 → [Full run details: FLUX guidance_scale=30](docs/runs_gs30.md)
+
+Also ran ViT+LLM LoRA experiments on the same dataset to test whether fine-tuning the vision encoder helps. Both ViT runs came in below LLM-only on F1, suggesting the guidance_scale=30 synthetic data isn't realistic enough for the ViT to learn useful visual features.
+
+→ [Full ViT run details: FLUX guidance_scale=30](docs/runs_vit_gs30.md)
 
 ---
 
@@ -124,6 +128,6 @@ Ran 4 rounds of QLoRA fine-tuning on the FLUX guidance_scale=30 dataset (Qwen3-V
 - Training run 1 (FLUX guidance_scale=30): done — class imbalance identified
 - Training run 2 (FLUX guidance_scale=30): done — genuine classification, precision weak (0.693)
 - Training run 3 (FLUX guidance_scale=30): done — no improvement, data ceiling confirmed
-- Training run 4 (FLUX guidance_scale=30): done — healthy training, ceiling confirmed (F1 0.772)
+- Training run 4 (FLUX guidance_scale=30): done — healthy training, ceiling confirmed (F1 0.774)
 - FLUX inpainting run 2: not started (FLUX guidance_scale=10, cleaner defects)
 - Training run 5+: not started

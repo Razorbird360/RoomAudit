@@ -58,10 +58,10 @@ Worse than run 2 across the board. The lower LR just slowed convergence without 
 Same model and balanced dataset as runs 2/3. Reverted lr back to 1e-4 (run 3 showed 8e-5 was worse), capped at 4 epochs, added `EarlyStoppingCallback(patience=4)` to stop if eval_loss doesn't improve for 4 consecutive checks (100 steps).
 
 - Accuracy: 0.714
-- Precision: 0.679
-- Recall: 0.896
-- F1: 0.772
+- Precision: 0.676
+- Recall: 0.906
+- F1: 0.774
 
-Best loss curve of any run, train and eval tracked together with no divergence. Early stopping triggered at step 450, best checkpoint was step 350 (eval_loss 0.036478). The eval loss floor (~0.036) matches run 2 exactly, both hitting the same ceiling.
+Best loss curve of any run, train and eval tracked together with no divergence. Early stopping triggered at step 450, best checkpoint was step 350 (eval_loss 0.036393). The eval loss floor (~0.036) matches run 2 exactly, both hitting the same ceiling.
 
-Metrics are slightly below run 2 (F1 0.772 vs 0.789, Precision 0.679 vs 0.693) but with a ~130-sample eval set that gap is within noise, likely just random split variance. The hyperparams (lr=1e-4, 4 epochs, early stopping) are validated as the right config for this dataset.
+Metrics are in line with run 2 (F1 0.774 vs 0.789, Precision 0.676 vs 0.693) — within noise on a ~196-sample eval set, likely just random split variance. The hyperparams (lr=1e-4, 4 epochs, early stopping) are validated as the right config for this dataset.
