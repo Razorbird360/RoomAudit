@@ -113,7 +113,7 @@ Ran 4 rounds of QLoRA fine-tuning on the FLUX guidance_scale=30 dataset (Qwen3-V
 
 → [Full run details: FLUX guidance_scale=30](docs/runs_gs30.md)
 
-Also ran ViT+LLM LoRA experiments on the same dataset to test whether fine-tuning the vision encoder helps. Both ViT runs came in below LLM-only on F1, suggesting the guidance_scale=30 synthetic data isn't realistic enough for the ViT to learn useful visual features.
+Also ran ViT+LLM LoRA experiments on the same dataset to test whether fine-tuning the vision encoder helps. It was worse than LLM-only — precision dropped to 0.568 with an 89% false positive rate on clean rooms (vs 51% for LLM-only). The ViT adapters learn to detect the FLUX texture pattern in the synthetic images rather than actual room dirtiness. That pattern only exists in messy images, so the ViT learned to spot whether an image was inpainted rather than whether the room is dirty.
 
 → [Full ViT run details: FLUX guidance_scale=30](docs/runs_vit_gs30.md)
 
