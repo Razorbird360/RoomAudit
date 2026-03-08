@@ -9,7 +9,8 @@ SCOUT_SYSTEM_PROMPT = (
 
 SCOUT_QUESTION = (
     "Before assessing this hotel room, identify 1-2 specific regions you want to inspect more closely. "
-    "Focus on areas most likely to have defects: beds, pillows, floors, bins, towels, chairs. "
+    "Choose regions that would give the most useful evidence about cleanliness: "
+    "beds, pillows, floors, bins, towels, chairs are common inspection areas. "
     "Respond ONLY with this schema: "
     '{"regions": [{"region": [x1, y1, x2, y2], "reason": "..."}, ...]} '
     "where coordinates are fractions of the image size (0.0 to 1.0), "
@@ -21,7 +22,8 @@ CROP_FOLLOWUP = (
     "Now give your final cleanliness assessment using only this schema: "
     '{"clean": true/false, "defects": [{"object": "...", "type": "...", "description": "..."}]} '
     "Valid objects: pillow, bed_sheet, blanket, floor, carpet, chair, desk, mirror, sofa, bath_towel, bin, window. "
-    "Valid defect types: stain, hair, debris, litter, not_emptied, dirty."
+    "Valid defect types: stain, hair, debris, litter, not_emptied, dirty. "
+    "If no defects are visible in the inspected regions, set clean=true and defects=[]."
 )
 
 

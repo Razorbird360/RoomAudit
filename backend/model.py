@@ -6,7 +6,8 @@ import torch
 from PIL import Image
 from qwen_vl_utils import process_vision_info
 
-ADAPTER_PATH = Path(__file__).resolve().parent.parent / "outputs" / "lora_adapter"
+# Adapter to load. Options: lora_adapter (single-turn, best F1), lora_adapter_agent (agentic), lora_adapter_vit (ViT+LLM)
+ADAPTER_PATH = Path(__file__).resolve().parent.parent / "outputs" / "lora_adapter_agent"
 
 VALID_OBJECTS = {
     "pillow", "bed", "blanket", "floor", "carpet",
@@ -41,9 +42,25 @@ def _get_device():
     return "cpu"
 
 
+def _maybe_download_adapter():
+    # Download the configured adapter from HuggingFace if not present locally.
+    if ADAPTER_PATH.exists():
+        return
+    adapter_name = ADAPTER_PATH.name
+    print(f"Adapter '{adapter_name}' not found locally. Downloading from HuggingFace...")
+    from huggingface_hub import snapshot_download
+    snapshot_download(
+        "RanenSim/RoomAudit-Lora",
+        allow_patterns=f"{adapter_name}/*",
+        local_dir=str(ADAPTER_PATH.parent),
+    )
+    print(f"Adapter downloaded to {ADAPTER_PATH}")
+
+
 def load_model():
     """Load base model + LoRA adapter. Uses Unsloth on CUDA, transformers on MPS/CPU."""
     global model, tokenizer, device
+    _maybe_download_adapter()
     device = _get_device()
 
     if device == "cuda":

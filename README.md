@@ -1,4 +1,4 @@
-# roomaudit
+# RoomAudit
 
 Fine-tuning of a vision model to detect hotel room cleanliness defects, with an agentic web interface for live inspection. The inference pipeline is multi-step: the model first identifies regions worth closer inspection, receives cropped views of those areas, then gives its final verdict with full context.
 
@@ -25,33 +25,80 @@ datagen/
   run.py               — full data generation entry point
 training/
   train.ipynb          — QLoRA fine-tuning notebook (dataset build, training, metrics plot)
+  train_agent.ipynb    — agentic LoRA fine-tuning notebook
+  train_vit.ipynb      — ViT + LLM LoRA fine-tuning notebook
 scripts/
   normalize_images.py  — one-off: resize + PNG→JPG in-place
   generate_messy.py    — diagnostic: run SAM3 and log detection scores
 data/
   clean/               — source images (JPG, normalized)
-  masks/               — SAM3 output masks (.npz per image)
   messy/               — generated defect images + manifest.json
+  crops/               — region crops from agentic inspection
+  upload-examples/     — sample images for testing the web app
 outputs/
-  lora_adapter/        — saved LoRA adapter after training
+  lora_adapter/        — single-turn LoRA adapter (best F1)
+  lora_adapter_agent/  — agentic LoRA adapter (default)
+  lora_adapter_vit/    — ViT + LLM LoRA adapter
 ```
 
 ---
 
-## Quick start (web app)
-
-```bash
-npm install        # installs frontend deps + backend pip deps
-npm run dev        # starts both frontend (:5173) and backend (:8000)
-```
+## Quick start
 
 Requires Python 3.11+ with a venv activated. On CUDA machines, install `backend/requirements-cuda.txt` instead for Unsloth support.
 
-The backend auto-detects your device — CUDA (4-bit via Unsloth), MPS (fp16), or CPU (fp32).
+**1. Create and activate a Python venv**
+
+Mac / Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Windows (PowerShell):
+```powershell
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+**2. Install backend dependencies**
+
+Mac / CPU:
+```bash
+pip install -r backend/requirements.txt
+```
+
+CUDA:
+```bash
+# Replace cu128 with your CUDA version (cu128 = CUDA 12.8, for Blackwell GPUs)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+pip install -r backend/requirements-cuda.txt
+```
+
+**3. Start the backend** (venv must be active):
+
+```bash
+cd backend
+uvicorn main:app --port 8000
+```
+
+**4. Start the frontend** (new terminal):
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Then open [localhost:5173](http://localhost:5173) in your browser.
+
+On first backend start it will automatically download the active LoRA adapter (~300MB) from HuggingFace. To switch adapters, edit `ADAPTER_PATH` in `backend/model.py` — options are `lora_adapter` (best F1), `lora_adapter_agent` (agentic, default), or `lora_adapter_vit`.
+
+The backend auto-detects your device: CUDA (4-bit via Unsloth), MPS (fp16), or CPU (fp32).
 
 ---
 
-## Data generation setup
+### Data generation setup
 
 These must be installed in order — PyTorch and Unsloth have to come before everything else.
 
@@ -82,7 +129,7 @@ huggingface-cli login
 
 ---
 
-## Running the pipeline
+### Running the pipeline
 
 **Step 1 — normalize source images** (one-time):
 ```bash

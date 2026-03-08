@@ -1,4 +1,4 @@
-# roomaudit — project log
+# RoomAudit — project log
 
 ## The data problem
 
@@ -6,7 +6,7 @@ The obvious first instinct was to find an existing dataset. I looked at:
 
 - **Hotels-50K** — the images weren't suitable, wrong kind of content
 - **Places365** — too low resolution, wouldn't survive inpainting
-- **Booking.com scraping** — ToS violation, and hard to find many suitable images 
+- **Booking.com scraping** — ToS violation, and hard to find many suitable images
 - **Flickr** — manually browsed but requires a Pro account ($8/month) to download in bulk, not worth it
 
 Eventually settled on manually downloading from **Unsplash**, **Pexels**, and **Flickr** (individual downloads). Ended up with 218 clean hotel room images.
@@ -111,11 +111,15 @@ Some images came out fine but others are noticeably unrealistic, for example def
 
 Ran 4 rounds of QLoRA fine-tuning on the FLUX guidance_scale=30 dataset (Qwen3-VL-4B, r=32, balanced 1:1 clean/messy). Run 1 exposed a class imbalance bug (Recall=1.0, model always predicted messy). Runs 2–4 fixed that and converged to a precision ceiling of ~0.67–0.69, F1 ~0.77–0.79. The eval loss floor (~0.036) was identical across all three runs regardless of LR or epoch count. The guidance_scale=30 synthetic images aren't realistic enough to push further. Optimal config confirmed: lr=1e-4, 4 epochs, early stopping (patience=4).
 
-→ [Full run details: FLUX guidance_scale=30](docs/runs_gs30.md)
+→ [Full run details: FLUX guidance_scale=30](runs_gs30.md)
 
 Also ran ViT+LLM LoRA experiments on the same dataset to test whether fine-tuning the vision encoder helps. It was worse than LLM-only — precision dropped to 0.568 with an 89% false positive rate on clean rooms (vs 51% for LLM-only). The ViT adapters learn to detect the FLUX texture pattern in the synthetic images rather than actual room dirtiness. That pattern only exists in messy images, so the ViT learned to spot whether an image was inpainted rather than whether the room is dirty.
 
-→ [Full ViT run details: FLUX guidance_scale=30](docs/runs_vit_gs30.md)
+→ [Full ViT run details: FLUX guidance_scale=30](runs_vit_gs30.md)
+
+Also ran 2 rounds of agentic fine-tuning on the same dataset (two-turn format: scout regions → final verdict). Both runs landed below the single-turn baseline. Run 1 had a biased scout prompt and identical crop pairs across clean repeats, which caused the model to associate "inspecting closely → defect present" even on clean rooms (F1 0.740, 56% clean accuracy). Run 2 fixed the prompt and cycling crops but clean accuracy actually got worse (40%), suggesting the two-turn format gives the model more surface area to learn spurious patterns from the guidance_scale=30 synthetic images. Will revisit with guidance_scale=10 data.
+
+→ [Full agentic run details: FLUX guidance_scale=30](runs_agent_gs30.md)
 
 ---
 
@@ -123,11 +127,15 @@ Also ran ViT+LLM LoRA experiments on the same dataset to test whether fine-tunin
 
 **LLM LoRA — Run 4 (v5):** Qwen3-VL-4B, r=32, lr=1e-4, 4 epochs, early stopping, balanced dataset.
 
-![LLM LoRA training metrics](docs/assets/metrics.png)
+![LLM LoRA training metrics](assets/metrics.png)
 
 **ViT + LLM LoRA — Run 1:** Same setup with `finetune_vision_layers=True`.
 
-![ViT+LLM LoRA training metrics](docs/assets/metrics_vit.png)
+![ViT+LLM LoRA training metrics](assets/metrics_vit.png)
+
+**Agentic LoRA — Run 2:** Two-turn format, lr=5e-5, 15 epochs (early stopped step 1225 ≈ epoch 8.8), patience=6.
+
+![Agentic LoRA training metrics](assets/metrics_agent.png)
 
 ---
 
